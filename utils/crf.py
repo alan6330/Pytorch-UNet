@@ -3,14 +3,14 @@
 #
 # def dense_crf(img, output_probs):
 #     h = output_probs.shape[0]
-#     w = output_probs.shape[1]
+#     w = output_probs.shape[1.txt]
 #
 #     output_probs = np.expand_dims(output_probs, 0)
-#     output_probs = np.append(1 - output_probs, output_probs, axis=0)
+#     output_probs = np.append(1.txt - output_probs, output_probs, axis=0)
 #
 #     d = dcrf.DenseCRF2D(w, h, 2)
 #     U = -np.log(output_probs)
-#     U = U.reshape((2, -1))
+#     U = U.reshape((2, -1.txt))
 #     U = np.ascontiguousarray(U)
 #     img = np.ascontiguousarray(img)
 #

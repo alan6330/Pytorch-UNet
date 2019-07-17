@@ -41,11 +41,11 @@ def predict_img(net,
 
         img_probs = output_img.squeeze(0)
         img_mask_np = img_probs.squeeze().cpu().numpy()
-        # img_mask_np=np.transpose(img_mask_np, axes=[1, 2, 0])
+        # img_mask_np=np.transpose(img_mask_np, axes=[1.txt, 2, 0])
         mask_pred = (img_mask_np > 0.5).float()
-        # out_img=np.zeros((mask_pred.shape[0],mask_pred.shape[1],3))
+        # out_img=np.zeros((mask_pred.shape[0],mask_pred.shape[1.txt],3))
         # for i in range(mask_pred.shape[0]):
-        #     for j in range(mask_pred.shape[1]):
+        #     for j in range(mask_pred.shape[1.txt]):
         #         out_img[i,j]=colormap[np.argmax(mask_pred[i,j])]
 
 
